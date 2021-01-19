@@ -1,0 +1,53 @@
+{
+  "name": "localheinz/phpunit-event-example",
+  "type": "library",
+  "description": "Provides examples for using the upcoming event system of phpunit/phpunit..",
+  "homepage": "https://github.com/localheinz/phpunit-event-example",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.13.2",
+    "ergebnis/license": "^1.1.0",
+    "ergebnis/php-cs-fixer-config": "~2.11.0",
+    "ergebnis/test-util": "^1.4.0",
+    "infection/infection": "~0.20.2",
+    "phpunit/phpunit": "^9.5.1",
+    "psalm/plugin-phpunit": "~0.15.0",
+    "vimeo/psalm": "^4.4.1"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.14"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "composer-normalize": {
+      "indent-size": 2,
+      "indent-style": "space"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Localheinz\\PHPUnit\\Event\\Example\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Localheinz\\PHPUnit\\Event\\Example\\Test\\": "test/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/localheinz/phpunit-event-example/issues",
+    "source": "https://github.com/localheinz/phpunit-event-example"
+  }
+}
