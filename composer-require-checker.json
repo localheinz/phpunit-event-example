@@ -14,6 +14,14 @@
     "static",
     "string",
     "true",
-    "void"
+    "void",
+    "PHPUnit\\Event\\Code\\Test",
+    "PHPUnit\\Event\\Telemetry\\Duration",
+    "PHPUnit\\Event\\TestSuite\\Finished",
+    "PHPUnit\\Event\\TestSuite\\FinishedSubscriber",
+    "PHPUnit\\Event\\Test\\Passed",
+    "PHPUnit\\Event\\Test\\PassedSubscriber",
+    "PHPUnit\\Event\\Test\\Prepared",
+    "PHPUnit\\Event\\Test\\PreparedSubscriber"
   ]
 }
