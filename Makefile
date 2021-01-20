@@ -37,5 +37,5 @@ tests: vendor ## Runs tests with phpunit/phpunit
 	vendor/bin/phpunit --configuration=test/phpunit.xml
 
 vendor: composer.json composer.lock
-	composer validate --strict
+	composer validate
 	composer install --no-interaction --no-progress
