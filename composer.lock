@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a7d02dbf6f12c1be8b566c94a60cf83",
+    "content-hash": "209ade5dab45a277a559328dba56a9be",
     "packages": [],
     "packages-dev": [
         {
@@ -2401,16 +2401,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "dev-master",
+            "version": "dev-event",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2a281052d"
+                "url": "https://github.com/theseer/phpunit.git",
+                "reference": "b2a3d2bf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2a281052d",
-                "reference": "2a281052d",
+                "url": "https://api.github.com/repos/theseer/phpunit/zipball/b2a3d2bf3",
+                "reference": "b2a3d2bf3",
                 "shasum": ""
             },
             "require": {
@@ -2449,7 +2449,6 @@
                 "ext-soap": "*",
                 "ext-xdebug": "*"
             },
-            "default-branch": true,
             "bin": [
                 "phpunit"
             ],
@@ -2467,7 +2466,16 @@
                     "src/Framework/Assert/Functions.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "classmap": [
+                    "tests/"
+                ],
+                "files": [
+                    "tests/_files/CoverageNamespacedFunctionTest.php",
+                    "tests/_files/CoveredFunction.php",
+                    "tests/_files/NamespaceCoveredFunction.php"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2487,19 +2495,19 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/master"
+                "source": "https://github.com/theseer/phpunit/tree/event"
             },
             "funding": [
                 {
-                    "url": "https://phpunit.de/donate.html",
-                    "type": "custom"
+                    "type": "github",
+                    "url": "https://github.com/sebastianbergmann"
                 },
                 {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
+                    "type": "custom",
+                    "url": "https://phpunit.de/donate.html"
                 }
             ],
-            "time": "2021-01-18T12:53:17+00:00"
+            "time": "2021-01-19T19:35:35+00:00"
         },
         {
             "name": "psalm/plugin-phpunit",
@@ -5232,7 +5240,7 @@
     "aliases": [
         {
             "package": "phpunit/phpunit",
-            "version": "9999999-dev",
+            "version": "dev-event",
             "alias": "10.0.0",
             "alias_normalized": "10.0.0.0"
         }
