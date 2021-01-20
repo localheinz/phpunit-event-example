@@ -34,4 +34,59 @@ final class ExampleTest extends Framework\TestCase
 
         self::assertSame($name, $example->name());
     }
+
+    public function testFromNameReturnsExampleWithOneQuarterOfASecondWaitTime(): void
+    {
+        $name = self::faker()->sentence;
+
+        $example = Example::fromName($name);
+
+        \usleep(250_000);
+
+        self::assertSame($name, $example->name());
+    }
+
+    public function testFromNameReturnsExampleWithHalfASecondWaitTime(): void
+    {
+        $name = self::faker()->sentence;
+
+        $example = Example::fromName($name);
+
+        \usleep(500_000);
+
+        self::assertSame($name, $example->name());
+    }
+
+    public function testFromNameReturnsExampleWithThreeQuartersOfASecondWaitTime(): void
+    {
+        $name = self::faker()->sentence;
+
+        $example = Example::fromName($name);
+
+        \usleep(750_000);
+
+        self::assertSame($name, $example->name());
+    }
+
+    public function testFromNameReturnsExampleWith1SecondWaitTime(): void
+    {
+        $name = self::faker()->sentence;
+
+        $example = Example::fromName($name);
+
+        \sleep(1);
+
+        self::assertSame($name, $example->name());
+    }
+
+    public function testFromNameReturnsExampleWithOneAndAHalfSecondsWaitTime(): void
+    {
+        $name = self::faker()->sentence;
+
+        $example = Example::fromName($name);
+
+        \usleep(1_500_000);
+
+        self::assertSame($name, $example->name());
+    }
 }
